@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import { ROUTES } from "./constants/RouteConfig"
+
+// Routes
 import NoMatch from "./pages/error.js"
+// import A from "./pages/index";
+import B from "./pages/dashboard/index";
 
 export default class App extends Component {
 
@@ -12,26 +14,14 @@ export default class App extends Component {
             <Router>
                 <Switch>
 
-                    {
-                        // Mapping réussi
-                        // ToDo recupérer les path et component
-                        ROUTES.map((path, component) => {
-                            return (
-                                <Route path={ path } component={ component } />
-                            )
-                        })
-                    }
+                    <Route exac path={ "/" } component={ B } />
+                    {/*<Route exac path={ "/" } component={ A } />*/}
+                    {/*<Route path={ "/react-redux" } component={ B } />*/}
 
                     {/* 404 */}
                     <Route component={NoMatch} />
-
                 </Switch>
             </Router>
         );
     }
 }
-
-App.propTypes = {
-    path: PropTypes.string.isRequired,
-    component: PropTypes.element.isRequired
-};
