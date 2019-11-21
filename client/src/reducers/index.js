@@ -20,7 +20,7 @@ export default function rootReducer(state = initialState, action = {}) {
            data: state.data.concat(action.payload) // Used to merge action.payload to the copy of the state into state.data
         });
 
-    } else return state;
+    } else return state; // === return initialState
 };
 
 rootReducer.propTypes = {
