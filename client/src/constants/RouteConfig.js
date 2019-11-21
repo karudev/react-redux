@@ -1,12 +1,12 @@
-import Dashboard from "../pages/dashboard";
+import Dashboard from "../pages/index";
 
-export const ROUTES = [{
-    Pages : { // 404
-        NoMatch: {
+export const ROUTES = {
+    Pages : {
+        NoMatch: { // 404
             path: "/404",
-            component: Dashboard
-        }, // Dashboard | Index
-        Dashboard: {
+            component: null
+        },
+        Dashboard: { // Dashboard | Index
             path: "/",
             component: Dashboard
         },
@@ -15,6 +15,6 @@ export const ROUTES = [{
             component: Login
         }*/
     }
-}];
+};
 
 
