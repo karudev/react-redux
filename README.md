@@ -17,6 +17,28 @@ npm install --save-dev react-dev-utils
 ```
 Source : https://reacttraining.com/react-router/web/guides/quick-start
 
+# Redux
+##Requirements
+
+- Installation de redux. 
+
+Le but de Redux est de créer de l'ordre dans la gestion des  state  de votre application.
+```
+npm i redux --save-dev
+```
+Source : https://www.npmjs.com/package/redux
+
+- Installation de react-redux. 
+
+Officielle reliure React pour Redux.
+```
+npm i react-redux --save-dev
+```
+Source : https://www.npmjs.com/package/react-redux
+
+## Documentation
+
+La documentatiopn React Redux est disponible via **https://react-redux.js.org** .
 
 # Symfony 4 Api Project
 
