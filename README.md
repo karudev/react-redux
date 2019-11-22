@@ -38,7 +38,7 @@ Source : https://www.npmjs.com/package/react-redux
 
 ## Documentation
 
-La documentatiopn React Redux est disponible via **https://react-redux.js.org** .
+La documentation React Redux est disponible via **https://react-redux.js.org** .
 
 # Symfony 4 Api Project
 
