@@ -36,6 +36,14 @@ class ConnectedForm extends Component {
             title
         } = this.state;
 
+        /** Deported logic into a reusable middleware (Redux best practice) */
+        // const forbiddenWords = ['spam', 'money'];
+        // const foundedWord = forbiddenWords.filter(word => title.includes(word));
+        //
+        // if(foundedWord) {
+        //     return this.props.titleForbidden()
+        //  }
+
         this.props.addState({ title });
         this.setState({
             title: ""

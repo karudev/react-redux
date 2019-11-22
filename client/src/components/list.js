@@ -16,8 +16,8 @@ const mapStateToProps = state => { // Conventional name
 const ConnectedList = ({ data }) => (
     <ul>
         {
-            data.map(e => (
-                <li key={ e.id }>{ e.title }</li>
+            data.map((e, key) => (
+                <li key={ key }>{ e.title }</li>
             ))
         }
     </ul>

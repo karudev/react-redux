@@ -21,7 +21,7 @@ Store.dispatch(addState({
 
 export default class A extends Component {
 
-    render(){
+    render() {
         return (
             <div></div>
         )

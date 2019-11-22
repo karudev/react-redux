@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 
 // Action-types
-import { ADD_STATE } from "../constants/ActionConfig";
+import { ADD_STATE } from "../constants/action-types";
 
 const initialState = {
     data: []
